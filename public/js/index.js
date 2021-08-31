@@ -1,4 +1,4 @@
-let posn = {
+    let posn = {
         "E": "東風",
         "S": "南風",
         "W": "西風",
@@ -51,7 +51,7 @@ let posn = {
             if (bywho == banker) {
                 fianlscore = (data.value.score + (bop * bcount))
                 if (data.value.who == "self") {
-                    fianlscore += 10
+                    fianlscore += bop
                     for (let k in scor) {
                         if (k == bywho) {
                             scor[k] += fianlscore * 3
@@ -67,7 +67,7 @@ let posn = {
             } else {
                 fianlscore = data.value.score
                 if (data.value.who == "self") {
-                    fianlscore += 10
+                    fianlscore += bop
                     for (let k in scor) {
                         if (k == bywho) {
                             scor[k] += (fianlscore * 3) + (bop * bcount)
