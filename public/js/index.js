@@ -26,12 +26,12 @@ let posn = {
         Swal.fire({
             title: "積分計算",
             html: `
-            放槍者：
+            放槍者：<br>
             <select id="who" class="mb-3" name="who">
             <option value="self">自摸</option>
             ${opt}
             </select><br>
-            台數(牌型台，不用算莊家台)：<input type="number" name="scoring" id="scoring" value="0" min="0"><br>
+            台數(牌型台，不用算莊家台)：<br><input type="number" name="scoring" id="scoring" value="0" min="0"><br>
             <div>分數：<span id="talscr"></span></div>
            `,
             didOpen: () => {
