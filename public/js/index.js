@@ -18,7 +18,6 @@
         opt += bywho == "S" ? "" : `<option value="S">南</option>`
         opt += bywho == "W" ? "" : `<option value="W">西</option>`
         opt += bywho == "N" ? "" : `<option value="N">北</option>`
-        console.log(opt)
         let bp = parseInt($("#base_point").val())
         let bop = parseInt($("#bonus_point").val())
         let banker = $("#pos").data("id")
@@ -46,7 +45,6 @@
                 }
             }
         }).then((data) => {
-            console.log(data)
             let fianlscore
             if (bywho == banker) {
                 fianlscore = (data.value.score + (bop * bcount))
