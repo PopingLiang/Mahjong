@@ -1,0 +1,63 @@
+
+.cus-header,
+.cus-footer{
+    position: fixed !important;
+    background-color: antiquewhite ;
+    width: 100% ;
+    height: 60px ;
+    z-index: 99 ;
+}
+
+.cus-header{
+    top: 0px;
+}
+
+.cus-footer{
+    bottom: 0px;
+}
+
+.cus-body{
+    position: relative;
+    margin:70px auto;
+}
+
+.cus-list{
+    padding-left: 0;
+    padding-right: 0 !important;
+    border-radius: 0 !important;
+}
+
+.bg-anwhite{
+    background-color: antiquewhite ;
+}
+
+.cus-button{
+    font-size: 1.5em;
+}
+
+.adress-api{
+    display: flex;
+}
+
+.cus-sub-obj{
+    right:0;
+    position: absolute;
+    z-index: 90;
+}
+
+.cus-sub-obj-parent{
+    position: relative;
+}
+
+.all-body {
+    margin: 0px auto;
+    text-align: center;
+}
+
+textarea{
+    resize: none !important;
+}
+
+.error{
+   color: red;
+}
